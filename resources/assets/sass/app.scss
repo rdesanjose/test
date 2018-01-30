@@ -1,0 +1,113 @@
+
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+html, body { height: 100%; min-height: 100%; font-family: 'Raleway'; }
+header { position: relative; z-index: 10; }
+header * { box-sizing: border-box; }
+footer {
+	padding:10px 0px;
+	p { margin:0; }
+}
+a:hover { text-decoration: none; }
+ul li { list-style-type: none; }
+#main-container { height:100%; height: auto !important; min-height:100%; }
+.auto { max-width: 1024px; margin-left: auto; margin-right: auto; }
+.auto.max { max-width: 1750px; }
+.auto.small { max-width: 1200px; }
+.fl { float: left; }
+.fr { float: right; }
+.clr, .ft-co-list li, .pl-sl-set:after, .ie-li-det:after { display: block; float: none; clear: both; }
+.flex-center { align-items: center; }
+.flex-bottom { align-items: flex-end; }
+.flex-row-reverse { flex-direction: row-reverse; }
+.flex-xs { display: flex; }
+.logo { margin:10px 0px 20px; }
+.logo a { font-size:40px; font-weight: 600; }
+.logo h1 { display: inline-block; margin:0px; }
+.main-nav { display:block; border-bottom:1px solid #216a94; }
+.main-nav ul { display:flex; }
+.main-nav ul li { flex:1; }
+.main-nav ul li a { padding:5px 20px; font-size:20px; }
+.burger-menu {
+	display:none;
+	.line {
+		float:left;
+		margin-right:5px;
+		div {
+			width: 30px;
+		  height: 5px;
+		  background-color: #636b6f;
+		  margin: 6px 0;
+		}
+	}
+	label {
+		float:left;
+		margin-top:9px;
+	}
+}
+
+@import "home";
+@import "posts";
+
+@media screen and (max-width: 960px) {
+	.home .owl-thumbs {
+		position: relative;
+		bottom:0px;
+		margin:10px 0px;
+	}
+}
+
+@media screen and (max-width: 770px) {
+  .posts { padding-right:10px; padding-left:10px; }
+  .main-nav ul li a {
+  	padding: 5px 10px;
+  	font-size:15px;
+  }
+  .logo a {
+  	font-size:35px;
+  }
+}
+@media screen and (max-width: 590px) {
+  .main-nav ul li a {
+  	padding: 5px 0px;
+  	font-size:15px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+	.main-nav.mobile {
+		float:right;
+		margin:10px;
+		border-bottom:none;
+		ul {
+			display: none;
+			position: absolute;
+			width:100%;
+			top:60px;
+			left:0px;
+			padding-left:0px;
+			background: #fff;
+			li {
+				list-style-type: none;
+				flex:none;
+				border-bottom:1px solid #ddd;
+				a {
+					display: block;
+					padding:8px 10px;
+				}
+			}
+		}
+	}
+	.mobile-width {
+		float:left;
+	}
+	.burger-menu { display: block; margin-left:10px; color:#636b6f; }
+	.burger-menu:hover { color:#636b6f; }
+}

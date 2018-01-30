@@ -1,0 +1,1 @@
+$(document).ready(function(){$(".owl-carousel").owlCarousel({loop:!0,items:1,thumbs:!0,thumbImage:!0,thumbContainerClass:"owl-thumbs",thumbItemClass:"owl-thumb-item"})});

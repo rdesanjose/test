@@ -1,0 +1,38 @@
+.home {
+	.owl-carousel {
+		width:100%;
+		img {
+			max-width: 100%;
+		}
+		.item {
+			width:100%;
+			background:#000;
+		}
+	}
+	.owl-thumbs {
+		position: absolute;
+		bottom:10px;
+		width:100%;
+		text-align: center;
+		.owl-thumb-item {
+			position: relative;
+			opacity:0.6;
+			overflow: hidden;
+			display: inline-block;
+			width:100px;
+			height:100px;
+			margin:0px 5px;
+			padding:0px;
+			background: none;
+			border:0px;
+		}
+		.owl-thumb-item.active {
+			opacity:1;
+		}
+		.owl-thumb-item img {
+			max-height: 100%;
+			width:auto;
+			max-width: none;
+		}
+	}
+}
